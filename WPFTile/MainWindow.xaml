@@ -1,0 +1,111 @@
+﻿<Controls:MetroWindow x:Class="WPFTile.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+            xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"  
+            xmlns:fa="clr-namespace:FontAwesome.WPF;assembly=FontAwesome.WPF"
+            Title="MahApps.Metro.Window" Width="800" Height="530"  
+            GlowBrush="{DynamicResource AccentColorBrush}"  
+            WindowStartupLocation="CenterScreen" Background="Black" 
+            WindowStyle="None" ShowTitleBar="False" ResizeMode="NoResize">
+    <Grid ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition  Width="auto"></ColumnDefinition>
+            <ColumnDefinition  Width="*"></ColumnDefinition>
+            <ColumnDefinition  Width="auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition  Height="auto"></RowDefinition>
+            <RowDefinition  Height="2*"></RowDefinition>
+            <RowDefinition  Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+     
+            <Controls:Tile Title="Address Box"  Width="260" VerticalAlignment="Center" HorizontalAlignment="Center"
+               Height="130" Grid.Row="0" Grid.Column="0" Background="#0093a6">
+                <fa:ImageAwesome Icon="AddressCard" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                         Foreground="White" Width="80" Height="80" />
+            </Controls:Tile>
+
+        <Controls:Tile Title="Calendar"  Width="260"  Grid.Row="0" Grid.Column="1" Background="#613cbc"
+               Height="130" VerticalAlignment="Center" HorizontalAlignment="Center">
+              <fa:ImageAwesome Icon="Calendar" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                         Foreground="White" Width="80" Height="80" />
+        </Controls:Tile>
+        
+        <Controls:Tile Title="IE"  Width="130"  Grid.Row="0" Grid.Column="2" Background="#2b84ee"
+               Height="130" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <fa:ImageAwesome Icon="InternetExplorer" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                         Foreground="White" Width="60" Height="60" />
+        </Controls:Tile>
+        
+        <Controls:Tile Title="Youtube"  Width="130"  Grid.Row="0" Grid.Column="3" Background="#008e00"
+               Height="130" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <fa:ImageAwesome Icon="YoutubePlay" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                         Foreground="White" Width="80" Height="80" />
+        </Controls:Tile>
+          <!--Row-2-->
+
+        <Controls:Tile Title="Users"  Width="260" VerticalAlignment="Center" HorizontalAlignment="Center"
+               Height="130" Grid.Row="1" Grid.Column="0" Background="#da532c">
+            <fa:ImageAwesome Icon="Users" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                         Foreground="White" Width="80" Height="80" />
+        </Controls:Tile>
+
+        <Controls:Tile Title="Gallery"  Width="260"  Grid.Row="1" Grid.Column="1"
+               Height="130" VerticalAlignment="Center" HorizontalAlignment="Center" Background="#0090a4">
+            <fa:ImageAwesome Icon="Image" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                         Foreground="White" Width="80" Height="80" />
+        </Controls:Tile>
+
+        <Controls:Tile Title="Windows"  Width="130"  Grid.Row="1" Grid.Column="2"
+               Height="130" VerticalAlignment="Center" HorizontalAlignment="Center" Background="#9e00a5">
+            <fa:ImageAwesome Icon="Windows" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                         Foreground="White" Width="80" Height="80" />
+        </Controls:Tile>
+        <Controls:Tile Title="Skype"  Width="130"  Grid.Row="1" Grid.Column="3" Background="#0a55be"
+               Height="130" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <fa:ImageAwesome Icon="Skype" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                         Foreground="White" Width="80" Height="80" />
+        </Controls:Tile>
+
+        <!--Row-3-->
+
+        <Controls:Tile Title="Wechat"  Width="260" VerticalAlignment="Center" HorizontalAlignment="Center"
+               Height="130" Grid.Row="2" Grid.Column="0" Background="#9f00a7">
+            <fa:ImageAwesome Icon="Wechat" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                         Foreground="White" Width="80" Height="80" />
+        </Controls:Tile>
+        <Controls:Tile Title="Bar Chart"  Width="260"  Grid.Row="2" Grid.Column="1" Background="#00a100"
+               Height="130" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <fa:ImageAwesome Icon="BarChart" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                         Foreground="White" Width="80" Height="80" />
+        </Controls:Tile>
+
+        <Controls:Tile Title="HandSpock"  Width="260"  Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2"
+               Height="130" VerticalAlignment="Center" HorizontalAlignment="Center" Background="#5938b4">
+            <fa:ImageAwesome Icon="HandSpockOutline" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                         Foreground="White" Width="80" Height="80" />
+        </Controls:Tile>
+        <!--Row-4-->
+
+        <Controls:Tile Title="Desktop"  Width="260" VerticalAlignment="Top" HorizontalAlignment="Center"
+               Height="130" Grid.Row="3" Grid.Column="0" Background="#3183d9">
+            <fa:ImageAwesome Icon="Desktop" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                         Foreground="White" Width="80" Height="80" />
+        </Controls:Tile>
+        <Controls:Tile Title="Whatsapp"  Width="260"  Grid.Row="3" Grid.Column="1" Background="#2e8bef"
+               Height="130" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <fa:ImageAwesome Icon="Whatsapp" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                         Foreground="White" Width="80" Height="80" />
+        </Controls:Tile>
+
+        <Controls:Tile Title="Thank you"  Width="260"  Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"
+               Height="130" VerticalAlignment="Top" HorizontalAlignment="Center" Background="#ae193e">
+            <fa:ImageAwesome Icon="ThumbsUp" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                         Foreground="White" Width="80" Height="80" />
+        </Controls:Tile>
+
+
+    </Grid>
+</Controls:MetroWindow>
